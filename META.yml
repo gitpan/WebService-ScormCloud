@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               WebService-ScormCloud
-version:            0.01
+version:            0.02
 abstract:           Interface to cloud.scorm.com
 author:
     - Larry Leszczynski <larryl@cpan.org>
@@ -25,6 +25,7 @@ requires:
     Readonly:             0
     Test::Exception:      0
     Test::More:           0
+    Time::Local:          0
     Try::Tiny:            0
     URI:                  0
     XML::Simple:          0
