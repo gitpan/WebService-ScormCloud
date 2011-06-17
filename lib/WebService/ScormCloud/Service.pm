@@ -8,11 +8,11 @@ WebService::ScormCloud::Service - ScormCloud API base class
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -232,17 +232,17 @@ Input arguments are:
 
 =over 4
 
-=item params
+=item B<params>
 
 A hashref of API request params.  At minimum must include "method".
 
-=item callback
+=item B<callback>
 
 A callback function that extracts and returns the desired data from
 the response data.  The callback should expect a single argument
 "response" which is the parsed XML response data.
 
-=item args
+=item B<args>
 
 An optional hashref of arguments to modify the request.
 
@@ -298,6 +298,9 @@ Please report any bugs or feature requests to C<bug-scormcloud at rt.cpan.org>, 
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=WebService-ScormCloud>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
+Patches more than welcome, especially via GitHub:
+L<https://github.com/larryl/ScormCloud>
+
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
@@ -307,6 +310,10 @@ You can find documentation for this module with the perldoc command.
 You can also look for information at:
 
 =over 4
+
+=item * GitHub
+
+L<https://github.com/larryl/ScormCloud>
 
 =item * RT: CPAN's request tracker
 
